@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<link href="grazi.css"
+rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Playfair+Display&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Indie+Flower|Playfair+Display&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Cormorant+Garamond|Indie+Flower|Playfair+Display&display=swap" rel="stylesheet">
+
+<title>Grazi Photos & Videos</title>
+
+<meta charset="utf-8">
+
+</head>
+
+<body>
+<div id="wrapper">
+<header>
+
+<h1><a href="index.html">Grazi Photos & Videos</a></h1>
+  
+</header>
+
+<nav>
+<ul> 
+<li><a href="index.html">Home &nbsp;</a></li>
+<li><a href="gallery.html">&nbsp; Gallery &nbsp;</a></li>
+<li><a href="contact.html">&nbsp; Contact &nbsp;</a></li>
+<li><a href="survey.html">&nbsp; Survey </a></li>
+</ul>
+</nav>
+
+
+
+
+<main>
+
+	<div id="gallery">
+			<div class="row">
+				<div class="column">
+				<img src="media/model.png" width="200" height="150" alt="Model" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+				</div>
+				<div class="column">
+				<img src="media/birthday.jpg" width="200" height="150" alt="Cupcake" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+				</div>
+				<div class="column">
+				<img src="media/flowers.jpg" width="200" height="150" alt="Flowers" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+				</div>
+				<div class="column">
+				<img src="media/dog.jpg" width="200" height="150" alt="Dog" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+				</div>
+				<div class="column">
+				<img src="media/fall1.jpg" width="200" height="150" alt="Fall" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+				</div>
+				<div class="column">
+				<img src="media/wedding1.jpg" width="200" height="150" alt="Wedding 1" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+				</div>
+				<div class="column">
+				<img src="media/kids1.jpg" width="200" height="150" alt="Kids" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+				</div>
+				<div class="column">
+				<img src="media/sunset2.jpg" width="200" height="150" alt="Sunset" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+				</div>
+				<div class="column">
+				<img src="media/fall2.jpg" width="200" height="150" alt="Leaves" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+				</div>
+				<div class="column">
+				<img src="media/wedding5.jpg" width="200" height="150" alt="Wedding 2" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+				</div>
+				<div class="column">
+				<img src="media/kids2.jpg" width="200" height="150" alt="George" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+				</div>
+				<div class="column">
+				<img src="media/makeup2.png" width="200" height="150" alt="Makeup" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+				</div>
+				
+				
+			</div>
+		
+<div id="myModal" class="modal">
+		<span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+  
+		<div class="mySlides">
+		<div class="numbertext">1 / 12</div>
+		<img src="media/model.png" style="width:100%" alt="Model">
+		</div>
+		
+		<div class="mySlides">
+		<div class="numbertext">2 / 12</div>
+		<img src="media/birthday.jpg" style="width:100%" alt="Cupcake">
+		</div>
+		
+		<div class="mySlides">
+		<div class="numbertext">3 / 12</div>
+		<img src="media/flowers.jpg" style="width:100%" alt="Flowers">
+		</div>
+		
+		<div class="mySlides">
+		<div class="numbertext">4 / 12</div>
+		<img src="media/dog.jpg" style="width:100%" alt="Dog">
+		</div>
+		
+		<div class="mySlides">
+		<div class="numbertext">5 / 12</div>
+		<img src="media/fall1.jpg" style="width:100%" alt="Fall"> 
+		</div>
+		
+		<div class="mySlides">
+		<div class="numbertext">6 / 12</div>
+		<img src="media/wedding1.jpg" style="width:100%" alt="Wedding 1">
+		</div>
+		
+		<div class="mySlides">
+		<div class="numbertext">7 / 12</div>
+		<img src="media/kids1.jpg" style="width:100%" alt="Kids">
+		</div>
+		
+		<div class="mySlides">
+		<div class="numbertext">8 / 12</div>
+		<img src="media/sunset2.jpg" style="width:100%" alt="Sunset">
+		</div>
+		
+		<div class="mySlides">
+		<div class="numbertext">9 / 12</div>
+		<img src="media/fall2.jpg" style="width:100%" alt="Leaves">
+		</div>
+		
+		<div class="mySlides">
+		<div class="numbertext">10 / 12</div>
+		<img src="media/wedding5.jpg" style="width:100%" alt="Wedding 2">
+		</div>
+		
+		<div class="mySlides">
+		<div class="numbertext">11 / 12</div>
+		<img src="media/kids2.jpg" style="width:100%" alt="George">
+		</div>
+		
+		<div class="mySlides">
+		<div class="numbertext">12 / 12</div>
+		<img src="media/makeup2.png" style="width:100%" alt="Makeup">
+		</div>
+		
+	</div>
+	
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+	
+	
+	<div class="column">
+      <img class="demo cursor" src="media/model.png" style="width:100%" onclick="currentSlide(1)" alt="Model">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="media/birthday.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cupcake">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="media/flowers.jpg" style="width:100%" onclick="currentSlide(3)" alt="Flowers">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="media/dog.jpg" style="width:100%" onclick="currentSlide(4)" alt="Dog">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="media/fall1.jpg" style="width:100%" onclick="currentSlide(5)" alt="Fall">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="media/wedding1.jpg" style="width:100%" onclick="currentSlide(6)" alt="Wedding 1">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="media/kids1.jpg" style="width:100%" onclick="currentSlide(7)" alt="Kids">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="media/sunset2.jpg" style="width:100%" onclick="currentSlide(8)" alt="Sunset">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="media/fall2.jpg" style="width:100%" onclick="currentSlide(9)" alt="Leaves">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="media/wedding5.jpg" style="width:100%" onclick="currentSlide(10)" alt="Wedding 2">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="media/kids2.jpg" style="width:100%" onclick="currentSlide(11)" alt="George">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="media/makeup2.png" style="width:100%" onclick="currentSlide(12)" alt="Makeup">
+    </div>
+	
+	
+</div>
+	</div>	
+
+<br>
+<div id="grazi"><span class="grazi">
+Grazielle Gomes</span><br>
+Media, PA 19063 
+
+<br>267-582-0420
+
+</div>
+
+</main>
+  
+<footer> 
+
+
+<br>Copyright &copy; 2020 Grazi Videos & Photos
+<br><a href="mailto:graziphotosvideos@gmail.com">graziphotosvideos@gmail.com</a>
+  
+</footer>
+</div>
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+</body>
+</html>
